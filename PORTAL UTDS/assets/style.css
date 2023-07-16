@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap');
+:root{
+    --primary-bg:#06286B;
+    --secondary-bg:#E5E5E5;
+    --primary-color:#F7FFFF;
+    --primary-font:'Inter', sans-serif;
+    --primary-gray:#7A7A7A;
+    --footer-color:#153359;
+}
+
+
+/* --------------- DEFAULT STYLING ------------ */
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a,
+h1,h2,h3,h4,h5,span,p,li,ol,ul,address{
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    font-weight: 400;
+    margin: 0!important;
+}
+
+label,input{
+    font-family: var(--primary-font);
+}
+
+ol{
+    color: #000!important;
+}
+
+
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+
+
+/* ------------- CUSTOM COLOR ------------ */
+.color-blue{
+    color: var(--primary-bg);
+}
+
+.color-white{
+    color: var(--secondary-bg)!important;
+}
+
+.font-13{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.color-gray{
+    color: var(--secondary-bg)!important;
+}
+
+.bg-gray{
+    background-color: var(--secondary-bg)!important;
+}
+
+.bg-footer{
+ background-color: var(--footer-color)!important;
+}
+
+.color-black{
+    color: #000;
+}
+
+.color-primary-gray{
+    color: var(--primary-gray)!important;
+}
+
+.basis-49{
+    flex-basis: 49%;
+}
+
+.basis-48{
+    flex-basis: 48%;
+}
+
+.weight-600{
+    font-weight: 600;
+    letter-spacing: 0.7px;
+}
+
+.w-17{
+    width: 17%!important;
+}
+
+.ml-245{
+    margin-left: 245px!important;
+}
+
+.line-spacing-7{
+    letter-spacing: 0.7px;
+}
+
+.weight-800{
+    letter-spacing: 0.7px;
+    font-weight: 800!important;
+}
+
+.number-box{
+    max-width: max-content;
+    padding: 20px;
+}
+
+/* --------- CUSTOM PADDINGS ----------- */
+.p-20{
+    padding: 20px;
+}
+
+.no-margin{
+    margin: 0!important;
+}
+
+
+.py-10{
+    padding: 10px 0px;
+}
+
+.little-hr{
+    width: 10px;
+    border-top: 1px solid #000;
+    transform: translateY(3px);
+}
+
+
+/* --------------- CUSTOM FONTS ----------- */
+.font-16{
+    font-size: 16px;
+}
+
+.font-40{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.font-18{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.font-h16{
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+}
+
+.font-24{
+    font-size: 24px;
+}
+
+
+
+.font-14{
+    font-size: 14px;
+}
+
+
+
+.font-12{
+    font-size: 12px;
+}
+
+.sm-top-padding{
+    padding-top: 70px;
+}
+
+.top-padding{
+    padding-top: 100px;
+}
+.bottom-padding{
+    padding-bottom: 100px;
+}
+
+
+.gray-box{
+    /* transform: translateY(-65px); */
+    position: relative;
+    top: -65px;
+    z-index: -1!important;
+}
+
+
+.price-box{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.price-box2{
+    padding: 15px!important;
+}
+
+
+/* ------------------ MGC CUSTOM STYLING -------------- */
+.icon::before{
+    font-size: 24px!important;
+    color: var(--primary-color);
+}
+
+.icon-1::before{
+    font-size: 12px!important;
+    color: var(--primary-color);
+    font-weight: 600;
+    border: 1px solid var(--primary-color);
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.active .icon::before,
+.active .icon-1::before,
+.active span{
+    color: var(--primary-bg);
+}
+
+.active .icon-1::before{
+    border-color: var(--primary-bg);
+}
+
+
+.line-height{
+    line-height: 1.7;
+}
+.line-height2{
+    line-height: 2;
+}
+
+input[type="search"]{
+    padding: 9px 15px;
+    font-size: 14px;
+    line-height: 1.3;
+    background-color: #fff;
+    border: 1px solid #E1E5EB;
+}
+
+input[type="text"]{
+    border: 1px solid #666;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+}
+
+
+
+input[type="submit"]{
+    font-weight: 400;
+    color: #c36;
+    text-align: center;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 1px solid #c36;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 3px;
+    transition: all .3s;
+}
+
+input[type="submit"]:hover{
+    background-color: #c36;
+    color: #fff;
+    transition: all .3s;
+}
+
+
+.rounded-lg2{
+    border-radius: 0.6rem;
+}
+
+
+
+.rounded-top-lg3{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.rounded-bottom-lg3{
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.big-gap{
+    gap: 7rem;
+}
+
+
+/* ----------------- OUTSIDE BOX CURVE -------- */
+
+.active{
+    position: relative;
+    border-top-left-radius: 1.4rem;
+    border-bottom-left-radius: 1.4rem;
+    background-color: #fff;
+}
+
+.z-3{
+    z-index: 3;
+}
+
+
+.active::before,
+.active::after{
+    content: '';
+    position: absolute;
+    right: -8px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.active::before{
+    box-shadow: 35px 35px 0 10px #fff;
+    top: -50px;
+}
+
+.active::after{
+    bottom: -50px;
+    box-shadow: 35px -35px 0 10px #fff;
+}
+
+
+
+
+
+
+
+/* -------------- CUSTOM LOGO STYLING ----------- */
+.logo-size{
+    width: 140px;
+    height: 100px;
+}
+
+.ad-size{
+    width: 160px;
+    height: 60px;
+}
+
+/* -------------------- CUSTOM BACKGROUND ---------------  */
+.bg-blue{
+    background-color: var(--primary-bg)!important;
+}
+
+
+.pl-10{
+    padding-left: 10px;
+}
+
+/* ------------------ CUSTOM ROUNDED BORDER ---------- */
+.rounded-lg{
+    border-radius: 0.5rem;
+}
+
+.left-rounded{
+    position: relative;
+    
+}
+
+
+.back-btn{
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    border: 2px solid #000;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 1rem;
+    border-radius: 3px;
+    transition: all .3s;
+}
+
+.back-btn:hover{
+    background: none;
+    color: #000;
+    transition: all .3s;
+}
+
+.download-btn{
+    padding: 10px;
+    color: #fff;
+    background: #06286B;
+    border: 2px solid #06286B;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 1rem;
+    border-radius: 3px;
+    transition: all .3s;
+}
+
+.download-btn:hover{
+    color: #06286B;
+    background-color: #fff;
+    transition: all .3s;
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal UTDS</title>
+    <link rel="stylesheet" href="assets/fonts/MingCute.css">
+    <link rel="stylesheet" href="assets/bootstrap.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container py-3 d-flex gap-3">
+        <aside id="aside" class="top-0 bg-blue rounded-lg d-flex flex-column align-items-center gap-2 py-4 px-2" >
+            <div class="bg-white rounded px-1">
+                <a href="#" class="p-3 d-flex justify-content-center align-items-center">
+                    <img class="logo-size" src="assets/images/Sumillion-RGB.png" alt="Logo">
+                </a>
+            </div>
+            <div class="px-2 mt-3">
+                <h3 class="font-16 text-center">Welcome to your certification app!</h3>
+            </div>
+            <div class="w-100 mt-3">
+                <ul class="nav flex-column pl-10 gap-3 py-2">
+                    <li class="nav-item"><a href="addNewPage.html" class="d-flex align-items-center gap-3 py-10 ps-4"><span><i class="mgc_add_line icon-1"></i></span> <span class="font-16">Add new</span></a></li>
+                    <li class="nav-item"><a href="index.html" class="d-flex align-items-center gap-3 py-10 ps-4"><span><i class="mgc_grid_line icon"></i></span> <span class="font-16">Dashboard</span></a></li>
+                    <li class="nav-item"><a href="certificatesPage.html" class="active d-flex align-items-center gap-3 py-10 ps-4"><span><i class="mgc_certificate_2_line icon"></i></span> <span class="font-16">Certificates</span></a></li>
+                    <li class="nav-item"><a href="#" class="d-flex align-items-center gap-3 py-10 ps-4"><span><i class="mgc_exit_line icon"></i></span> <span class="font-16">Sign out</span></a></li>
+                </ul>
+            </div>
+            <div class="mt-5">
+                <img class="ad-size" src="assets/images/ad.png" alt="ad-image">
+            </div>
+            <div class="d-flex flex-column align-items-center gap-2 mt-4">
+                <span class="font-12">Powered by</span>
+                <a class="font-12" href="#">UTDS Optimal Choice</a>
+            </div>
+        </aside>
+        <div id="right_container" class="container z-3">
+            <div class="bg-gray rounded-lg sm-top-padding px-5 pb-5">
+                <div class="d-flex justify-content-between align-items-start mb-5">
+                    <h2 class="align-self-center font-18 text-decoration-underline color-blue">Certifications directory</h2>
+                    <form action="#">
+                        <input class="rounded-pill bg-white" type="search" name="searc" id="searc" placeholder="Search...">
+                    </form>
+                </div>
+                <div>
+                    <!-- TABLE HEADING -->
+                    <div class="d-flex justify-content-between pb-2 px-5">
+                        <div class="basis-49"><h4 class="font-12 color-blue">Company</h4></div>
+                        <div class="basis-49 d-flex justify-content-between ">
+                            <h4 class="font-12 color-blue line-spacing-7">Date Created</h4>
+                            <h4 class="font-12 color-blue">Kg/CO2e</h4>
+                        </div>
+                    </div>
+                    <!-- TABLE ROWS -->
+                    <div class="d-flex flex-column justify-content-between bg-blue rounded-lg gap-4 py-3 px-3 mt-3 mb-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="basis-49 d-flex flex-column gap-2">
+                                <span class="font-16 weight-600">sumillion</span>
+                                <span class="font-12">erewr</span>
+                            </div>
+                            <div class="basis-48 d-flex justify-content-between align-items-center">
+                                <h4 class="font-12">04/07/2023</h4>
+                                <div class="bg-white price-box shadow">
+                                    <h4 class="font-18 color-blue">1,900.00</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center gap-3 ">
+                            <a href="#" class="font-14 color-gray">View & Print</a>
+                            <a href="#" class="font-14 color-gray">Edit</a>
+                            <a href="#" class="font-14 color-gray">Delete</a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between bg-blue rounded-lg gap-4 py-3 px-3 mt-3 mb-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="basis-49 d-flex flex-column gap-2">
+                                <span class="font-16 weight-600">UTDS TEST COMPANY</span>
+                                <span class="font-12">xcvbnm,.lkjhgfdfghjklkjhgfg</span>
+                            </div>
+                            <div class="basis-48 d-flex justify-content-between align-items-center">
+                                <h4 class="font-12">26/06/2023</h4>
+                                <div class="bg-white price-box shadow">
+                                    <h4 class="font-18 color-blue">606.00</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center gap-3 ">
+                            <a href="#" class="font-14 color-gray">View & Print</a>
+                            <a href="#" class="font-14 color-gray">Edit</a>
+                            <a href="#" class="font-14 color-gray">Delete</a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between bg-blue rounded-lg gap-4 py-3 px-3 mt-3 mb-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="basis-49 d-flex flex-column gap-2">
+                                <span class="font-16 weight-600">test123345</span>
+                                <span class="font-12">india</span>
+                            </div>
+                            <div class="basis-48 d-flex justify-content-between align-items-center">
+                                <h4 class="font-12">26/05/2023</h4>
+                                <div class="bg-white price-box shadow">
+                                    <h4 class="font-18 color-blue">1,323.00</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center gap-3 ">
+                            <a href="#" class="font-14 color-gray">View & Print</a>
+                            <a href="#" class="font-14 color-gray">Edit</a>
+                            <a href="#" class="font-14 color-gray">Delete</a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between bg-blue rounded-lg gap-4 py-3 px-3 mt-3 mb-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="basis-49 d-flex flex-column gap-2">
+                                <span class="font-16 weight-600">SUM</span>
+                                <span class="font-12">FEDFS</span>
+                            </div>
+                            <div class="basis-48 d-flex justify-content-between align-items-center">
+                                <h4 class="font-12">05/05/2023</h4>
+                                <div class="bg-white price-box shadow">
+                                    <h4 class="font-18 color-blue">332,373</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center gap-3 ">
+                            <a href="#" class="font-14 color-gray">View & Print</a>
+                            <a href="#" class="font-14 color-gray">Edit</a>
+                            <a href="#" class="font-14 color-gray">Delete</a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between bg-blue rounded-lg gap-4 py-3 px-3 mt-3 mb-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="basis-49 d-flex flex-column gap-2">
+                                <span class="font-16 weight-600">Positive Planet</span>
+                                <span class="font-12">4th Floor Bonded Warehouse</span>
+                            </div>
+                            <div class="basis-48 d-flex justify-content-between align-items-center">
+                                <h4 class="font-12">16/03/2023</h4>
+                                <div class="bg-white price-box shadow">
+                                    <h4 class="font-18 color-blue">2,868.00</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center gap-3 ">
+                            <a href="#" class="font-14 color-gray">View & Print</a>
+                            <a href="#" class="font-14 color-gray">Edit</a>
+                            <a href="#" class="font-14 color-gray">Delete</a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between bg-blue rounded-lg gap-4 py-3 px-3 mt-3 mb-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="basis-49 d-flex flex-column gap-2">
+                                <span class="font-16 weight-600">UTDS TEST COMPANY</span>
+                                <span class="font-12">xcvbnm,.lkjhgfdfghjklkjhgfg</span>
+                            </div>
+                            <div class="basis-48 d-flex justify-content-between align-items-center">
+                                <h4 class="font-12">03/03/2023</h4>
+                                <div class="bg-white price-box shadow">
+                                    <h4 class="font-18 color-blue">11,310.00</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center gap-3 ">
+                            <a href="#" class="font-14 color-gray">View & Print</a>
+                            <a href="#" class="font-14 color-gray">Edit</a>
+                            <a href="#" class="font-14 color-gray">Delete</a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between bg-blue rounded-lg gap-4 py-3 px-3 mt-3 mb-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="basis-49 d-flex flex-column gap-2">
+                                <span class="font-16 weight-600"></span>
+                                <span class="font-12"></span>
+                            </div>
+                            <div class="basis-48 d-flex justify-content-between align-items-center">
+                                <h4 class="font-12">01/03/2023</h4>
+                                <div class="bg-white price-box shadow">
+                                    <h4 class="font-18 color-blue">350.00</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center gap-3 ">
+                            <a href="#" class="font-14 color-gray">View & Print</a>
+                            <a href="#" class="font-14 color-gray">Edit</a>
+                            <a href="#" class="font-14 color-gray">Delete</a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between bg-blue rounded-lg gap-4 py-3 px-3 mt-3 mb-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="basis-49 d-flex flex-column gap-2">
+                                <span class="font-16 weight-600">UTDS TEST COMPANY</span>
+                                <span class="font-12">xcvbnm,.lkjhgfdfghjklkjhgfg</span>
+                            </div>
+                            <div class="basis-48 d-flex justify-content-between align-items-center">
+                                <h4 class="font-12">26/06/2023</h4>
+                                <div class="bg-white price-box shadow">
+                                    <h4 class="font-18 color-blue">606.00</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center gap-3 ">
+                            <a href="#" class="font-14 color-gray">View & Print</a>
+                            <a href="#" class="font-14 color-gray">Edit</a>
+                            <a href="#" class="font-14 color-gray">Delete</a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between bg-blue rounded-lg gap-4 py-3 px-3 mt-3 mb-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="basis-49 d-flex flex-column gap-2">
+                                <span class="font-16 weight-600">UTDS TEST COMPANY</span>
+                                <span class="font-12">xcvbnm,.lkjhgfdfghjklkjhgfg</span>
+                            </div>
+                            <div class="basis-48 d-flex justify-content-between align-items-center">
+                                <h4 class="font-12">26/06/2023</h4>
+                                <div class="bg-white price-box shadow">
+                                    <h4 class="font-18 color-blue">606.00</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center gap-3 ">
+                            <a href="#" class="font-14 color-gray">View & Print</a>
+                            <a href="#" class="font-14 color-gray">Edit</a>
+                            <a href="#" class="font-14 color-gray">Delete</a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between bg-blue rounded-lg gap-4 py-3 px-3 mt-3 mb-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="basis-49 d-flex flex-column gap-2">
+                                <span class="font-16 weight-600">UTDS TEST COMPANY</span>
+                                <span class="font-12">xcvbnm,.lkjhgfdfghjklkjhgfg</span>
+                            </div>
+                            <div class="basis-48 d-flex justify-content-between align-items-center">
+                                <h4 class="font-12">26/06/2023</h4>
+                                <div class="bg-white price-box shadow">
+                                    <h4 class="font-18 color-blue">606.00</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center gap-3 ">
+                            <a href="#" class="font-14 color-gray">View & Print</a>
+                            <a href="#" class="font-14 color-gray">Edit</a>
+                            <a href="#" class="font-14 color-gray">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="assets/js/index.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            var aside = document.getElementById('aside');
+            var right_container = document.getElementById('right_container');
+            var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollPosition >= 10 ) {
+                aside.style.position="fixed";
+                aside.classList.add("top-0");
+                aside.classList.add("w-17");
+                right_container.classList.add("ml-245");
+            } else {
+                aside.classList.remove("w-17");
+                aside.style.position = 'relative';
+                right_container.classList.remove("ml-245");
+            }
+        });
+
+    </script>
+</body>
+</html>
