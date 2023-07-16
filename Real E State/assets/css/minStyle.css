@@ -1,0 +1,209 @@
+@media (max-width:991px) {
+    .back-image2{
+        transform: translate(40%,15%);;
+    }
+    .ml-110{
+        margin-left: 90px!important;
+    }
+    .height-auto{
+        height: auto!important;
+    }
+    .font-l{
+        font-size: 3rem;
+    }
+    .font-xxl{
+        font-size: 4.875rem;
+    }
+    .font-xl{
+        font-size: 3.44356rem;
+    }
+    .font-sm-lg{
+        font-size: 1.1375rem!important;
+    }
+    .company-heading::after{
+        font-size: 1rem;
+    }
+
+    .gap-normal{
+        gap: 1.5rem!important;
+    }
+
+    .header-content{
+        transform: translateY(150px);
+    }
+
+    .custom-nav-div{
+        justify-content: flex-start!important;
+        position: absolute!important;
+        padding: 0px!important;
+        top: -15px;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 4;
+        width: 0px!important;
+        height: 100%;
+        overflow: hidden;
+        transition: all 0.2s ease-in-out;
+    }
+    .custom-nav{
+        flex-direction: column!important;
+        width: 100%;
+    }
+    
+    .custom-dropdown-menu{
+        position: relative!important;
+        transform: translate(0,5px)!important;
+        margin: 0px 10px;
+        border: none!important;
+        background-color: transparent!important;
+    }
+    
+    .width-effect{
+        width: 300px!important;
+        padding: 40px 20px!important;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .menu{
+        display: flex!important;
+        margin-right: 15px!important;
+        position: absolute;
+        right: -5px;
+        top: 33px;
+    }
+
+    .header-container{
+        background-position: center;
+    }
+}
+
+
+@media (max-width:767px) {
+    .text-box{
+        width: 100%!important;
+    }
+    .text-div{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.25)!important;
+    }
+    .text-div h4{
+        color: #fff!important;
+    }
+    .text-div p{
+        color: #fefefe!important;
+    }
+    .text-image-div img{
+        width: 100%;
+        height: 100%;
+    }
+    .feature-card-text{
+        display: none!important;
+    }
+    .font-sm-lg{
+        font-size: 1rem!important;
+    }
+    .font-xlg{
+        font-size: 1.4rem!important;
+    }
+    .custom-card-overlay{
+        height: 400px!important;
+    }
+    .custom-card-overlay img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .back-image2{
+        /* transform: translate(5%,15%);; */
+        display: none!important;
+    }
+}
+
+@media (max-width:575px) {
+    .bottom-feature-card{
+        transform: translate(0%,30%);
+        z-index: 3;
+    }
+    .feature-card-text{
+        padding-top: 30px!important;
+    }
+    .meet-text{
+        padding: 10px 20px!important;
+    }
+    .heading{
+        justify-content: center;
+    }
+    .translate-10{
+        transform: translateY(0)!important;
+    }
+    .hide-overflow{
+        overflow: hidden!important;
+    }
+    .join-subcontainer{
+        padding: 10px 0px 0px 5px;
+    }
+    .contact-para{
+        font-size: 1rem;
+    }
+    .contact-heading{
+        font-size: 1.5rem;
+    }
+    .marketing-div{
+        padding: 30px!important;
+    }
+    .marketing-para,
+    .event-para{
+        font-size: 1rem;
+    }
+    .info-para{
+        font-size: 0.9rem!important;
+    }
+    .ml-110{
+        margin-left: 20px!important;
+    }
+}
+
+
+@media (max-width:550px) {
+    .font-l{
+        font-size: 2rem;
+    }
+    .font-xxl{
+        font-size: 3rem;
+    }
+    .font-xl{
+        font-size: 2.2rem;
+    }
+    .company-heading::after{
+        font-size: 0.8rem;
+    }
+    .header-content{
+        margin-left: 15px!important;
+    }
+    .custom-card-overlay{
+        height: 380px!important;
+    }
+    .work-smallFont{
+        font-size: 1.1rem;
+    }
+    .direction{
+        flex-direction: column!important;
+    }
+}
+
+@media (max-width:440px) {
+    .back-image{
+        display: none!important;
+    }
+    .image-Btn{
+        transform: translate(-5%, -50%);
+    }
+    .custom-small-padding{
+        padding: 20px 10px!important;
+    }
+}
