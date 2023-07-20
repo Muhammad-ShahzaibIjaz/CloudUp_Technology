@@ -33,7 +33,7 @@
             <header>
                 <div class="d-flex  justify-content-center">
                     <a href="#">
-                        <img src="assets/images/header/logo.png" alt="Logo-image">
+                        <img class="w-100 h-100 object-fit-cover" src="assets/images/header/logo.png" alt="Logo-image">
                     </a>
                 </div>
                 <div class="d-flex justify-content-center custom-nav-div font-Spartan mt-3">
@@ -327,7 +327,81 @@
                 </div>
             </div>
         </div>
-        <div class="map-container font-Spartan">
+        <div class="searching-container py-5">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <select class="w-100 custom-select" name="pType" id="pType">
+                            <option value="#">Property Type</option>
+                            <option value="Villa">Villa</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12 order">
+                        <select class="w-100 custom-select" name="mLocation" id="mLocation">
+                            <option  value="#">Main Location</option>
+                            <option value="">Adliya</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <select class="w-100 custom-select" name="pStatus" id="pStatus">
+                            <option value="#">Property Status</option>
+                            <option value="">Any</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <select class="w-100 custom-select" name="minPrice" id="minPrice">
+                            <option value="#">Min Price</option>
+                            <option value="">30,000 BHD</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <select class="w-100 custom-select" name="maxPrice" id="maxPrice">
+                            <option value="#">Max Price</option>
+                            <option value="">30,000 BHD</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mt-4 d-flex justify-content-center align-items-center">
+                    <button id="showBtn"><i class="mgc_arrows_down_line"></i></button>
+                </div>
+                <div id="select-menu" class="row gy-4 mt-4 borders">
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <select class="w-100 custom-select" name="fType" id="fType">
+                            <option value="#">Furniture Type</option>
+                            <option value="Villa">Any</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12 order">
+                        <select class="w-100 custom-select" name="pStatusInclusive" id="pStatusInclusive">
+                            <option  value="#">Property Status Inclusive</option>
+                            <option value="">Inclusive</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <select class="w-100 custom-select" name="bed" id="bed">
+                            <option value="#">Bed</option>
+                            <option value="">1</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <select class="w-100 custom-select" name="baths" id="baths">
+                            <option value="#">Baths</option>
+                            <option value="">1</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <select class="w-100 custom-select" name="area" id="area">
+                            <option value="#">Area (SQM)</option>
+                            <option value="">5 SQM</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="searchBtn-div" class="d-flex justify-content-center align-items-center mt-4">
+                    <a id="searchBtn" href="#">Search</a>
+                </div>
+            </div>
+        </div>
+        <div class="map-container font-Spartan pt-5">
             <div >
                 <div class="d-flex align-items-center mb-4 ml-110">
                     <div class="d-flex flex-column">
@@ -386,6 +460,9 @@
                             <p class="text-uppercase color-text">Commerical</p>
                         </div>
                     </div>
+                </div>
+                <div>
+                    <img class="w-100 h-100 object-fit-cover" src="assets/images/feature_images/bgworld.png" alt="">
                 </div>
             </div>
         </div>
@@ -737,7 +814,7 @@
                                     <span class="work-BigFont text-uppercase">experience</span>
                                 </div>
                                 <div>
-                                    <p class="work-para">As the real estate market evolves, so do the strategies we use to market our luxury listings. We lead the industry in digital, web, and social media marketing which enables us to consistently reach high-end buyers locally, nationally and globally.</p>
+                                    <p class="work-para line-clamp">As the real estate market evolves, so do the strategies we use to market our luxury listings. We lead the industry in digital, web, and social media marketing which enables us to consistently reach high-end buyers locally, nationally and globally.</p>
                                 </div>
                             </div>
                         </div>
@@ -815,11 +892,11 @@
                         </div>
                         <div class="mt-5">
                             <form class="d-flex flex-column gap-4" action="#">
-                                <div class="d-flex justify-content-between align-items-center gap-4">
+                                <div class="d-flex justify-content-between input-field align-items-center gap-4">
                                     <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your Name">
                                     <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your Email">
                                 </div>
-                                <div class="d-flex justify-content-between align-items-center gap-4">
+                                <div class="d-flex justify-content-between input-field align-items-center gap-4">
                                     <input class="form-input" type="tel" name="phoneNo" id="phoneNo" placeholder="Enter Your Phone">
                                     <input class="form-input" type="text" name="address" id="address" placeholder="Enter Your Address">
                                 </div>
@@ -834,7 +911,7 @@
                         </div>
                     </div>
                     <div class="col-lg-5 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
-                        <div class="bg-lightWhite shadow px-4 py-5 custom-small-padding d-flex flex-column gap-5">
+                        <div class="bg-lightWhite shadow px-4 py-5 custom-small-padding">
                             <div class=" d-flex flex-column align-items-center gap-4">
                                 <h4 class="h4-text text-uppercase text-center">we'd <span class="weight-700 color-red">love</span> to meet you!</h4>
                                 <p class="small-text">We will choose one of our experienced agents to make your dream come true, whether you're buying, selling, or renting a home, land, office, or commercial space.</p>
@@ -843,12 +920,12 @@
                                 </div>
                                 <div class="align-self-start">
                                     <ul class="d-flex flex-column gap-4">
-                                        <li><a class="contact-text text-nowrap" href="#"><i class="mgc_mail_line circle-icon2 me-1"></i> office@garybarnesrealestate.com</a></li>
-                                        <li><a class="contact-text text-nowrap" href="#"><span class="mgc_phone_line circle-icon2 me-1"></span> +973 38 777 699</a></li>
+                                        <li><a class="contact-text" href="#"><i class="mgc_mail_line circle-icon2 me-1"></i><span class="text-center color-black weight-600">office@garybarnesrealestate.com</span></a></li>
+                                        <li><a class="contact-text" href="#"><span class="mgc_phone_line circle-icon2 me-1"></span><span class="text-center color-black weight-600">+973 38 777 699</span></a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="w-100 mt-5">
+                            <div class="w-100 mt-90">
                                 <ul class="d-flex align-items-center justify-content-center flex-wrap gap-4">
                                     <li><a class="d-flex justify-content-center align-items-center hover-icon circle-icon" href="#"><i class="fa-brands fa-facebook-f "></i></a></li>
                                     <li><a class="d-flex justify-content-center align-items-center circle-icon hover-icon" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
@@ -1264,7 +1341,7 @@
                                     <img  src="assets/images/news_and_events/Rectangle 114.png" alt="Image-1">
                                 </div>
                                 <div class="d-flex flex-column gap-3 justify-content-center align-items-center p-3 bg-white text-div">
-                                    <h4 class="custom-card-heading">8 POPULAR GOLF COURSES ON THE NH SEACOAST</h4>
+                                    <h4><a class="custom-card-heading" href="#">8 POPULAR GOLF COURSES ON THE NH SEACOAST</a></h4>
                                     <p class="custom-card-text">The NH Seacoast has many world class golf courses and country clubs! Where you wish to join</p>
                                 </div>
                             </div>
@@ -1273,7 +1350,7 @@
                                     <img  src="assets/images/news_and_events/Rectangle 116.png" alt="Image-1">
                                 </div>
                                 <div class="d-flex flex-column gap-3 justify-content-center align-items-center p-3 bg-white text-div">
-                                    <h4 class="custom-card-heading">SEACOAST MARKET WATCH 2022 MID - YEAR REVIEW</h4>
+                                    <h4><a class="custom-card-heading" href="#">SEACOAST MARKET WATCH 2022 MID - YEAR REVIEW</a></h4>
                                     <p class="custom-card-text">The NH Seacoast has many world class golf courses and country clubs! Where you wish to join</p>
                                 </div>
                             </div>
@@ -1282,7 +1359,7 @@
                                     <img  src="assets/images/news_and_events/Rectangle 118.png" alt="Image-1">
                                 </div>
                                 <div class="d-flex flex-column gap-3 justify-content-center align-items-center p-3 bg-white text-div">
-                                    <h4 class="custom-card-heading">7 VEGAN-FRIENDLY RESTAURANTS ON THE  NTH SEACOAST</h4>
+                                    <h4><a class="custom-card-heading" href="#">7 VEGAN-FRIENDLY RESTAURANTS ON THE  NTH SEACOAST</a></h4>
                                     <p class="custom-card-text">The NH Seacoast has many world class golf courses and country clubs! Where you wish to join</p>
                                 </div>
                             </div>
@@ -1410,7 +1487,7 @@
             margin:10,
             nav:false,
             autoplay: true,
-            autoplayTimeout: 1000,
+            autoplayTimeout: 10000,
             dots:true,
             responsive:{
                 0:{

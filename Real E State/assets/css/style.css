@@ -617,6 +617,10 @@ option:hover{
     font-size: 13px;
 }
 
+.mt-90{
+    margin-top: 90px!important;
+}
+
 .form-input:focus{
     outline: none!important;
 }
@@ -624,6 +628,7 @@ option:hover{
 textarea{
     color: var(--black)!important;
     background: rgba(255, 255, 255, 0.82);
+    border: 1px solid #ACACAC;
 }
 
 textarea:focus{
@@ -681,9 +686,11 @@ line-height: 171.5%;
     color: var(--black)!important;
     font-family: Spartan;
     font-size: 0.97625rem;
-    font-style: normal;
     font-weight: 600;
     line-height: normal;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .form-container{
@@ -853,7 +860,7 @@ line-height: 171.5%;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 182.5%;
+    line-height: 152.5%;
 }
 
 .custom-card-text{
@@ -907,6 +914,7 @@ line-height: 171.5%;
     height: 40px;
     width: 40px;
     border-radius: 50%;
+    background-color: transparent;
     border: 1px solid var(--primary-white);
     display: flex;
     justify-content: center;
@@ -1251,8 +1259,12 @@ footer > *{
 
 .card:hover .image-div{
     height: 100%;
-    border-top-left-radius: 0.375rem;
-    border-top-right-radius: 0.375rem;
+    border-radius: 0.375rem;
+}
+
+.card img{
+    transform: scale(1);
+    transition: all 0.5s ease;
 }
 
 .card:hover img{
@@ -1334,4 +1346,27 @@ footer > *{
 
 .ml-110{
     margin-left: 110px!important;
+}
+
+.line-clamp{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.searching-container{
+    background-image: url('/assets/images/header/Rectangle1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.Image-container{
+    background-image: url('/assets/images/feature_images/bgworld.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
