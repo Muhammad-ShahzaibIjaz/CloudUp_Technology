@@ -1,3 +1,50 @@
+@media (max-width:1050px) {
+    .nav{
+        margin: 0 20px!important;
+        flex-wrap: wrap!important;
+        justify-content: center!important;
+    }
+    .header-container{
+        height: 700px;
+    }
+}
+
+@media (max-width:1120px) {
+    .area-content{
+        flex-direction: column;
+        width: 100%;
+        bottom: -140px;
+    }
+    .area-content input{
+        width: 100%!important;
+    }
+}
+
+@media (max-width:991px) {
+    .inside-box{
+        height: 700px;
+    }
+    .area-content{
+        flex-direction: row;
+        bottom: -90px;
+    }
+    .area-content input{
+        width: 50%!important;
+    }
+    .searching-container{
+        height: 700px;
+    }
+    .header-container{
+        height: 650px;
+    }
+    .nav{
+        margin: 0!important;
+        flex-wrap: nowrap!important;
+        justify-content: flex-start!important;
+    }
+}
+
+
 @media (max-width:991px) {
     .order{
         order: 1;
@@ -48,8 +95,7 @@
         background-color: rgba(0, 0, 0, 0.9);
         z-index: 4;
         width: 0px!important;
-        height: 100%;
-        overflow: hidden;
+        overflow-y: auto;
         transition: all 0.2s ease-in-out;
     }
     .custom-nav{
@@ -85,6 +131,18 @@
 
 
 @media (max-width:767px) {
+    .inside-box{
+        height: 500px;
+    }
+    .basis-49{
+        flex-basis: 100%;
+    }
+    .searching-container{
+        height: 1000px;
+    }
+    .logo-image{
+        height: 70px;
+    }
     .text-box{
         width: 100%!important;
     }
@@ -133,6 +191,9 @@
 }
 
 @media (max-width:575px) {
+    .inside-box{
+        height: auto;
+    }
     .bottom-feature-card{
         transform: translate(0%,30%);
         z-index: 3;
@@ -208,6 +269,9 @@
     .back-image{
         display: none!important;
     }
+    .logo-image{
+        height: 50px;
+    }
     .image-Btn{
         transform: translate(-5%, -50%);
     }
@@ -219,6 +283,9 @@
 
 
 @media (max-width:360px) {
+    .no-gap{
+        gap: 0!important;
+    }
     .custom-small-padding{
         padding: 20px 5px!important;
         width: 100%!important;
@@ -249,5 +316,12 @@
     }
     .input-field{
         flex-direction: column!important;
+    }
+}
+
+@media (max-width:340px) {
+    .no-gap{
+        flex-direction: column!important;
+        gap: 2rem!important;
     }
 }
