@@ -29,20 +29,20 @@
 <body>
     
     <div class="main-container">
-        <div class="header-container pt-2">
-            <header>
+        <div class="header-container pt-4">
+            <header class="d-flex justify-content-evenly gap-3">
                 <div class="d-flex  justify-content-center">
-                    <a href="#">
-                        <img class="logo-image" src="assets/images/header/gb_real estate alpha w sh.png" alt="Logo-image">
+                    <a href="#" class="logo-anchor">
+                        <img class="logo-image " src="assets/images/header/gb_real estate alpha w - Copy.png" alt="Logo-image">
                     </a>
                 </div>
-                <div class="d-flex justify-content-center custom-nav-div font-Spartan mt-3">
+                <div class="d-flex justify-content-center custom-nav-div font-Spartan mt-4">
                     <ul class="nav custom-nav gap-normal">
                         <li class="nav-item">
-                            <a class="nav-link text-shadow font-sm weight-600 line-normal" href="#">HOME</a>
+                            <a class="nav-link text-shadow font-sm weight-600 line-normal custom-box-shadow " href="#">HOME</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link text-shadow font-sm weight-600 line-normal dropdown-toggle" data-bs-auto-close="outside" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="#">PROPERTIES</a>
+                            <a class="nav-link text-shadow font-sm weight-600 line-normal dropdown-toggle custom-box-shadow" data-bs-auto-close="outside" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="#">PROPERTIES</a>
                             <ul class="dropdown-menu custom-dropdown-menu" style="transform: translate(0,0px)!important;">
                                 <li class="dropend">
                                     <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">For Sale</a>
@@ -80,7 +80,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link text-shadow font-sm weight-600 line-normal dropdown-toggle" data-bs-auto-close="outside" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="#">COMMERCIAL</a>
+                            <a class="nav-link text-shadow font-sm weight-600 line-normal dropdown-toggle custom-box-shadow" data-bs-auto-close="outside" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="#">COMMERCIAL</a>
                             <ul class="dropdown-menu custom-dropdown-menu">
                                 <li class="dropend">
                                     <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">For Sale</a>
@@ -119,10 +119,10 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-shadow font-sm weight-600 line-normal" href="#">FEATURED LISTINGS</a>
+                            <a class="nav-link text-shadow font-sm weight-600 line-normal custom-box-shadow" href="#">FEATURED LISTINGS</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link text-shadow font-sm weight-600 line-normal dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="#">ABOUT US</a>
+                            <a class="nav-link text-shadow font-sm weight-600 line-normal dropdown-toggle custom-box-shadow" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="#">ABOUT US</a>
                             <ul class="dropdown-menu custom-dropdown-menu">
                                 <li><a class="dropdown-item" href="#">BLOG</a></li>
                                 <li><a class="dropdown-item" href="#">ABOUT US</a></li>
@@ -131,13 +131,13 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-shadow font-sm weight-600 line-normal" href="#">CONSTRUCTION</a>
+                            <a class="nav-link text-shadow font-sm weight-600 line-normal custom-box-shadow" href="#">CONSTRUCTION</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-shadow font-sm weight-600 line-normal" href="#">CONTACT US</a>
+                            <a class="nav-link text-shadow font-sm weight-600 line-normal custom-box-shadow" href="#">CONTACT US</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link text-shadow font-sm weight-600 line-normal dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="#">LANGUAGES</a>
+                            <a class="nav-link text-shadow font-sm weight-600 line-normal dropdown-toggle custom-box-shadow" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="#">LANGUAGES</a>
                             <ul class="dropdown-menu custom-dropdown-menu">
                                 <li><a class="dropdown-item" href="#">ENGLISH</a></li>
                                 <li><a class="dropdown-item" href="#"> عربي</a></li>
@@ -385,9 +385,17 @@
                 </div>
             </div>
         </div>
-        <div class="searching-container py-5 overflow-hidden">
+        <div class="position-relative py-5">
+            <div class="video-background">
+                <div class="video-overlay">
+                    <video autoplay loop muted>
+                        <source src="assets/cabin_-_104374 (720p).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
             <div class="container">
-                <div class="row gy-4">
+                <div class="row gy-4 justify-content-between">
                     <div class="col-lg-2 col-md-6 col-sm-12">
                         <div class="wrapper">
                             <div class="select-btn">
@@ -455,7 +463,7 @@
                 <div class="mt-4 d-flex justify-content-center align-items-center">
                     <button id="showBtn"><i class="mgc_arrows_down_line"></i></button>
                 </div>
-                <div id="select-menu" class="row gy-4 mt-4 borders">
+                <div id="select-menu" class="row gy-4 mt-4 justify-content-between borders">
                     <div class="col-lg-2 col-md-6 col-sm-12">
                         <div class="wrapper">
                             <div class="select-btn">
@@ -1401,9 +1409,9 @@
         </div>
         <div class="event-container overflow-hidden py-80">
             <div class="container">
-                <div class="row gy-4 align-self-start">
-                    <div class="col-lg-5">
-                        <div class="d-flex flex-column">
+                <div class="row gy-4 align-items-center">
+                    <div class="col-lg-5 col-md-12">
+                        <div class="d-flex flex-column font-Spartan">
                             <div class="d-flex align-items-center align-self-start gap-1">
                                 <h4 class="weight-700 line-normal font-l text-uppercase color-black">14</h4>
                                 <div class="red-small-line"></div>
@@ -1417,41 +1425,59 @@
                             </div>
                         </div>
                         <div class="event-para-div d-flex">
-                            <p class="event-para">
-                                learn more about your country and explore our blog for real estate and lifestyle insights you won't find anywhere else! We will bring you news and reports with statistics and professional analysis ti in-depth neighborhood articles and local tip for living your  best life, converging not only Bahrain but every country in the GCC and globally...
+                            <p class="event-para truncate-text2">
+                                Explore our blog for real estate and lifestyle information you won't find anywhere else! We will provide you with the most recent and up-to-date stories and information on articles for local tips on living your best life, covering not only Bahrain but all of the GCC countries and beyond
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="d-flex flex-column gap-3 position-relative">
-                            <div class="d-flex blog-card align-items-start shadow position-relative bg-white">
-                                <div class="w-100 basis-49 text-image-div">
-                                    <img  src="assets/images/news_and_events/Rectangle 114.png" alt="Image-1">
+                    <div class="col-lg-7 col-md-12 position-relative">
+                        <div class="card mb-3 custom-blog-card">
+                            <div class="row g-0 h-100">
+                                <div class="col-lg-6 col-md-6">
+                                    <img src="assets/images/news_and_events/Pic w_ Play - ActivePipe (1).jpeg" class="w-100 h-100 object-fit-cover" alt="...">
                                 </div>
-                                <div class="d-flex basis-49 flex-column gap-3 align-self-center justify-content-center align-items-center p-3 bg-white text-div">
-                                    <h4><a class="custom-card-heading" href="#">8 POPULAR GOLF COURSES ON THE NH SEACOAST</a></h4>
-                                    <p class="custom-card-text2">The NH Seacoast has many world class golf courses and country clubs! Where you wish to join</p>
-                                </div>
-                            </div>
-                            <div class="d-flex blog-card align-items-start shadow position-relative bg-white">
-                                <div class="w-100 basis-49 text-image-div">
-                                    <img  src="assets/images/news_and_events/Rectangle 116.png" alt="Image-1">
-                                </div>
-                                <div class="d-flex basis-49 flex-column gap-3 align-self-center justify-content-center align-items-center p-3 bg-white text-div">
-                                    <h4><a class="custom-card-heading" href="#">SEACOAST MARKET WATCH 2022 MID - YEAR REVIEW</a></h4>
-                                    <p class="custom-card-text2">The NH Seacoast has many world class golf courses and country clubs! Where you wish to join</p>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="card-body d-flex flex-column gap-3 h-100">
+                                        <h4><a class="blog-text-heading" href="#">Seacoast Market Watch: 2023 Mid-Year Review</a></h4>
+                                        <p class="blog-text truncate-text ">Discover the latest trends and enjoy your analysis of Seacoast real estate market activity!</p>
+                                        <a class="readMoreBtn align-self-end" href="#!">Read more</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="d-flex blog-card align-items-start shadow z-1 position-relative bg-white">
-                                <div class="w-100 basis-49 text-image-div">
-                                    <img  src="assets/images/news_and_events/Rectangle 118.png" alt="Image-1">
+                        </div>
+                        <div class="card mb-3 custom-blog-card">
+                            <div class="row g-0 h-100">
+                                <div class="col-lg-6 col-md-6">
+                                    <img src="assets/images/news_and_events/Pic w_ Play - ActivePipe - Untitled Page.jpeg" class="w-100 h-100 object-fit-scale" alt="...">
                                 </div>
-                                <div class="d-flex basis-49 flex-column gap-3 align-self-center justify-content-center align-items-center p-3 bg-white text-div">
-                                    <h4><a class="custom-card-heading" href="#">7 VEGAN-FRIENDLY RESTAURANTS ON THE  NTH SEACOAST</a></h4>
-                                    <p class="custom-card-text2">The NH Seacoast has many world class golf courses and country clubs! Where you wish to join</p>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="card-body d-flex flex-column gap-3 h-100">
+                                        <h4><a class="blog-text-heading" href="#">Seacoast Living | Your Guide to the NH Seacoast & Southern Maine</a></h4>
+                                        <p class="blog-text truncate-text">We are delighted to share our new Seacoast Living magazine - a robust guide to communities</p>
+                                        <a class="readMoreBtn align-self-end" href="#!">Read more</a>
+                                    </div>
                                 </div>
                             </div>
-                            <img class="back-image2" src="assets/images/news_and_events/Rectangle 119.png" alt="bg-Image">
+                        </div>
+                        <div class="card mb-3 custom-blog-card">
+                            <div class="row g-0 h-100">
+                                <div class="col-lg-6 col-md-6">
+                                    <img src="assets/images/news_and_events/tax rates.jpg" class="w-100 h-100 object-fit-cover" alt="...">
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="card-body d-flex flex-column gap-3 h-100">
+                                        <h4><a class="blog-text-heading" href="#">2022-2023 Property Tax Rates for the Greater Seacoast Area</a></h4>
+                                        <p class="blog-text truncate-text">Property tax rates for the Greater Seacoast Area of New Hampshire and Southern Maine vary quite</p>
+                                        <a class="readMoreBtn align-self-end" href="#!">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back-image2">
+                            <div class="image-wrapper">
+                                <img class="w-100 h-100 object-fit-cover" src="assets/images/news_and_events/blogbkg.jpg" alt="bg-Image">
+                                <div class="image-overlay"></div>
+                            </div>
                         </div>
                     </div>
                 </div>

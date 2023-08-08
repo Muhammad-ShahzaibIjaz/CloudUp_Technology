@@ -1,4 +1,32 @@
+@media (max-width: 1600px) {
+    .container{
+        max-width: 1500px;
+    }
+}
+
+@media (max-width: 1800px) {
+    .container{
+        max-width: 1580px;
+    }
+}
+
+@media (max-width: 1950px) {
+    .container{
+        max-width: 1620px;
+    }
+}
+
 @media (max-width:991px) {
+    .padding-3{
+        padding: 15px 1rem!important;
+    }
+    .counter-box{
+        flex-direction: row;
+        padding: 20px;
+    }
+    .mt-215{
+        margin-top: 215px!important;
+    }
     #nav-button{
         transform: rotate(180deg) translate(-75%,-30%);
     }
@@ -42,10 +70,16 @@
     }
     .small-box{
         flex-direction: column;
-        align-items: center!important;
+        height: auto;
     }
     .text-box{
         align-items: center!important;
+    }
+}
+
+@media (max-width:800px) {
+    .counter-box{
+        padding: 12px;
     }
 }
 
@@ -55,16 +89,8 @@
         gap: 2rem;
     }
     .counter-box{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         padding: 15px;
         flex-basis: 49%;
-    }
-    .counter-div{
-        display: flex;
-        flex-direction: row!important;
-        justify-content: space-between!important;
     }
     .carousel-top{
         flex-direction: column;
@@ -90,6 +116,9 @@
     .header{
         justify-content: flex-end!important;
     }
+    .counter-box{
+        flex-direction: column;
+    }
 }
 
 @media (max-width:600px) {
@@ -98,6 +127,13 @@
         justify-content: center!important;
     }   
 }
+
+@media (max-width:575px) {
+    .counter-div{
+        flex-direction: row!important;
+    }
+}
+
 
 @media (max-width:500px) {
     .counter-div{
@@ -137,6 +173,12 @@
     }
 }
 
+@media (max-width:475px) {
+    .notification-dropdown-menu{
+        left: -120px!important;
+    }
+}
+
 
 @media (max-width:465px) {
     .carousel-top{
@@ -156,5 +198,14 @@
     }
     .sub-counter-text{
         text-align: center;
+    }
+    .notification-dropdown-menu{
+        left: -80px!important;
+    }
+}
+
+@media (max-width:330px) {
+    .small-box{
+        height: 172px;
     }
 }
