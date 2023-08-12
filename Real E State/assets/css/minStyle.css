@@ -1,3 +1,55 @@
+@media (max-width:1920px) {
+    .header-container{
+        height: 900px;
+    }
+    .header-content{
+        transform: translate(0,173%);
+    }
+}
+
+@media (max-width:1680px) {
+    .header-container{
+        height: 800px;
+    }
+    .header-content{
+        transform: translate(0,115%);
+    }
+    .font-xxl{
+        font-size: 7.7rem;
+    }
+    .font-xl2{
+        font-size: 5.9rem;
+    }
+    .font-l2{
+        font-size: 4.7rem;
+    }
+}
+
+@media (max-width:1440px) {
+    .header-container{
+        height: 665px;
+    }
+    .header-content{
+        transform: translate(0,100%);
+    }
+    .font-xxl{
+        font-size: 6.6rem;
+    }
+    .font-xl2{
+        font-size: 5.2rem;
+    }
+    .font-l2{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width:1366px) {
+    .header-container{
+        height: 689px;
+    }
+}
+
+
 @media (max-width:1050px) {
     .nav{
         margin: 0 20px!important;
@@ -21,6 +73,9 @@
 @media (max-width:991px) {
     .inside-box{
         height: 700px;
+    }
+    .custom-padding{
+        padding: 0px!important;
     }
     .area-content{
         flex-direction: row;
@@ -55,12 +110,19 @@
     .logo-anchor::before{
         box-shadow: 0px 36px 10px 25px #a8a8a8;
     }
+    .font-xl2{
+        font-size: 4.3rem;
+    }
 }
 
 
 @media (max-width:991px) {
     .order{
         order: 1;
+    }
+    .company-heading::after{
+        font-size: 1.1625rem;
+        font-weight: 500!important;
     }
     .translate-80{
         transform: translateY(-180px)!important;
@@ -74,7 +136,8 @@
     .height-auto{
         height: auto!important;
     }
-    .font-l{
+    .font-l,
+    .font-l2{
         font-size: 3rem;
     }
     .font-xxl{
@@ -86,16 +149,13 @@
     .font-sm-lg{
         font-size: 1.1375rem!important;
     }
-    .company-heading::after{
-        font-size: 1rem;
-    }
 
     .gap-normal{
         gap: 1.5rem!important;
     }
 
     .header-content{
-        transform: translateY(150px);
+        transform: translate(0,125%);
     }
 
     .custom-nav-div{
@@ -106,7 +166,6 @@
         left: 0;
         bottom: 0;
         background-color: rgba(0, 0, 0, 0.9);
-        z-index: 4;
         width: 0px!important;
         overflow-y: auto;
         transition: all 0.2s ease-in-out;
@@ -213,9 +272,13 @@
     }
 }
 
+
 @media (max-width:575px) {
     .inside-box{
         height: auto;
+    }
+    .header-content{
+        transform: translate(0%, 190%);
     }
     .bottom-feature-card{
         transform: translate(0%,30%);
@@ -258,6 +321,19 @@
     .ml-110{
         margin-left: 20px!important;
     }
+    .font-l2{
+        font-size: 2.3rem;
+    }
+    .font-xxl{
+        font-size: 3.7rem;
+    }
+    .font-xl2{
+        font-size: 3.4rem;
+    }
+    .company-heading::after{
+        font-size: 1rem;
+        bottom: -45%;
+    }
 }
 
 
@@ -265,14 +341,8 @@
     .font-l{
         font-size: 2rem;
     }
-    .font-xxl{
-        font-size: 3rem;
-    }
     .font-xl{
         font-size: 2.2rem;
-    }
-    .company-heading::after{
-        font-size: 0.8rem;
     }
     .header-content{
         margin-left: 15px!important;
@@ -301,6 +371,24 @@
     .custom-small-padding{
         padding: 20px 10px!important;
     }
+    .font-l2{
+        font-size: 1.85rem;
+    }
+    .font-xxl{
+        font-size: 3.1rem;
+    }
+    .font-xl2{
+        font-size: 2.75rem;
+    }
+    .company-heading::after{
+        font-size: 0.85rem;
+    }
+    .header-content{
+        transform: translate(0%, 280%);
+    }
+    .company-heading::after{
+        bottom: -50%;
+    }
 }
 
 
@@ -322,8 +410,14 @@
     .font-xxl{
         font-size: 2.5rem;
     }
-    .font-xl{
-        font-size: 1.8rem;
+    .font-l2{
+        font-size: 1.65rem;
+    }
+    .font-xxl{
+        font-size: 2.75rem;
+    }
+    .font-xl2{
+        font-size: 2.45rem;
     }
     .width-effect{
         width: 255px!important;
@@ -346,6 +440,12 @@
     }
     .area-content input{
         width: 100%!important;
+    }
+    .header-content{
+        transform: translate(0%, 330%);
+    }
+    .company-heading::after{
+        bottom: -60%;
     }
 }
 
